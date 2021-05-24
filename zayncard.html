@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+  .card
+  {
+      display: flex;
+      flex-direction: row;
+      width: 800px;
+      /* border: 1px solid black; */
+      background-color: #7f53ac;
+background-image: linear-gradient(315deg, #7f53ac 0%, #647dee 74%);
+  }
+  .card_hero
+  {
+    flex: 0 0 40%;
+
+  }
+  .card_hero img
+  {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+  }
+  .card-content
+  {
+      flex: 1;
+      padding: 25px 50px;
+      display: flex;
+      flex-direction: column;
+  }
+  .flexinfo
+  {
+      display: flex;
+      flex-direction: column;
+  }
+ .flexbutton
+ {
+     width: 100%;
+     display: flex;
+     justify-content: flex-start;
+ }
+ .following
+ {
+display: flex;
+flex-direction: row;
+ }
+ .following h5
+ {
+     align-self: center;
+     margin-left: auto;
+     font-size: 1rem;
+     font-weight: 500;
+     text-transform: capitalize;
+ }
+ .state
+ {
+     margin-top: 0%;
+     transform:translateY(-20px);
+ }
+ #follow
+ {
+     padding-left:1rem;
+     align-self: center;
+     color: honeydew;
+     font-weight: 300;
+     font-size: 0.9rem;
+     font-family: sans-serif;
+ }
+ #playb {
+  /* flex: 1 1 auto; */
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+ /* text-shadow: 0px 0px 10px rgba(0,0,0,0.2);*/
+  /* box-shadow: 0 0 20px #eee; */
+  /* border-radius: 10px; */
+ }
+
+/* Demo Stuff End -> */
+
+/* <- Magic Stuff Start */
+
+#playb:hover {
+  background-position: right center; /* change the direction of the change here */
+  box-shadow: 1px 1px 20px rgb(40, 83, 133);
+
+}
+
+
+
+
+#playb {
+  background-image: linear-gradient(to right, #ce9cbf 0%, #86a0ce 51%, #fbc2eb 100%);
+}
+#playb
+{
+    border: none;
+}
+#aboutzayn
+{
+    transform: translateY(-20px);
+    color: rgb(49, 34, 34);
+    font-family: sans-serif;
+
+}
+
+
+</style>
+</head>
+<body>
+    <section id="artistid">
+    <figure class="card">
+<div class="card_hero"><img src="zayn-2021-m9.jpg" alt=""></div>
+
+<div class="card-content">
+    <div class="flexinfo">
+        <div class="following"> 
+    <h2>ZAYN</h2>
+    <h5>851 followers</h5></div>
+    <h4 class="state">Canadian singer</h4>
+    <p id="aboutzayn">Zain Javadd Malik, known mononymously as Zayn, is an English singer and songwriter. Born and raised in Bradford, Malik auditioned as a solo contestant for the British music competition The X Factor in 2010. After being eliminated as a solo performer, Malik was brought back into the competition, along with four other contestants, to form the boy band One Direction. Malik left the group in March 2015 and subsequently signed a solo recording contract with RCA Records.</p>
+</div>
+<div class="flexbutton">
+<button id="playb">play all</button>
+<div id="follow">
+Follow</div>
+
+</div>
+</div>
+
+    </figure>
+</section>
+</body>
+</html>

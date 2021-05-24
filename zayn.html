@@ -1,0 +1,1596 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+      crossorigin="anonymous"
+    />
+
+    <title>Hello, world!</title>
+    <style>
+      body {
+        background-color: black;
+        font-family: monospace;
+        color: white;
+        /* margin-right: 4%; */
+        /* min-width: 700px; */
+    background-image:url(back.jpg)
+
+      }
+
+      header {
+        height: 4rem;
+        width: 100%;
+        color: white;
+        display: flex;
+        flex-direction: row;
+        position: fixed;
+        background-color: black;
+
+        justify-content: space-between;
+        padding: 0.5rem;
+        flex-wrap: wrap;
+        /* visibility: hidden; */
+        /* position: relative; */
+        position: fixed;
+        z-index: 10;
+        top: 0%;
+      }
+      #headerimage {
+        height: inherit;
+        /* margin-left: 1rem; */
+        color: white;
+        display: inline-block;
+        display: flex;
+        flex-direction: row;
+        /* position: relative; */
+        margin-right: 2rem;
+        height: 100%;
+      }
+
+      #siteimg {
+        height: 100%;
+        /* width:auto; */
+      }
+      #headerimage div img {
+        height: 100%;
+      }
+
+      #sitetitle {
+        padding: 0.4rem;
+        height: auto;
+        font-weight: 700;
+        font-size: 1.1rem;
+        align-self: center;
+      }
+
+      #second-heading {
+        /* max-width: 200px; */
+        align-self: center;
+
+        /* padding-left: 1rem; */
+        margin-right: 2rem;
+        display: flex;
+      }
+      #second-heading div {
+        position: relative;
+      }
+      #second-heading input {
+        background-color: rgb(57, 65, 85);
+        padding: 0.6rem 2rem 0.6rem 0.4rem;
+
+        color: blanchedalmond;
+        width: auto;
+        border: none;
+        border-radius: 5px;
+        box-sizing: content-box;
+        background-color: rgb(24, 24, 65);
+        color: white;
+        padding-left: 2rem;
+      }
+      input:focus {
+        outline: none;
+      }
+      #second-heading .fa-search {
+        position: absolute;
+        top: 25%;
+        left: 3%;
+      }
+      #second-heading .fa-microphone {
+        position: absolute;
+        top: 25%;
+        right: 3%;
+      }
+      #favrouite {
+        font-size: 1.3rem;
+        text-transform: capitalize;
+        font-weight: 500;
+        align-self: center;
+        margin-left: 18vw;
+      }
+      #bell {
+        align-self: center;
+        padding-left: 1rem;
+        margin-bottom: 0.5rem;
+      }
+      #profile {
+        background-image: url(images/bebe\ rexha.jpg);
+        height: 3rem;
+        width: 3rem;
+        background-repeat: no-repeat;
+        background-size: contain;
+        border-radius: 50%;
+        margin-left: 2rem;
+      }
+      #heading {
+        height: 30vh;
+        width: 65%;
+        margin-top: 5%;
+        margin-left: 5%;
+      }
+      #carousle {
+        height: 100%;
+        width: 100%;
+        /* border: 2px solid red; */
+        /* position: absolute; */
+        position: relative;
+      }
+      #carousle #one {
+        height: 90%;
+        width: 60%;
+        position: absolute;
+        left: 20%;
+        z-index: 2;
+      }
+
+      #carousle #two {
+        height: 70%;
+        width: 60%;
+        position: absolute;
+        left: 0%;
+        top: 10%;
+      }
+      #carousle #three {
+        height: 70%;
+        width: 60%;
+        position: absolute;
+        right: 0%;
+        top: 10%;
+      }
+
+      .image {
+        /* min-width:60%; */
+        width: 100%;
+        height: 100%;
+        /* min-height: 250px; */
+        /* max-height: 600px;  */
+        /* max-width: 600px; */
+        /* position: absolute;  */
+      }
+      #four {
+        visibility: hidden;
+      }
+      #one:hover {
+        box-shadow: 2px 2px 10px 3px cyan;
+      }
+      #two:hover {
+        box-shadow: 2px 2px 10px 3px cyan;
+      }
+      #three:hover {
+        box-shadow: 2px 2px 10px 3px cyan;
+      }
+      @media screen and (min-width: 1300px) {
+        #carousle #one {
+          height: 50%;
+          width: 70%;
+          position: absolute;
+          left: 15%;
+          z-index: 2;
+          /* top: 5%; */
+        }
+      }
+      @media screen and (max-width: 1100px) {
+        #heading {
+          margin-top: 10%;
+        }
+      }
+      @media screen and (min-width: 990px) {
+        #heading {
+          height: 45vh;
+          width: 60%;
+          margin-top: 7%;
+        }
+        #carousle #one {
+          height: 80%;
+          width: 70%;
+          position: absolute;
+          left: 15%;
+          z-index: 2;
+          /* top: 5%; */
+        }
+
+        #carousle #two {
+          height: 60%;
+          width: 60%;
+          position: absolute;
+          left: 0%;
+          top: 10%;
+        }
+        #carousle #three {
+          height: 60%;
+          width: 60%;
+          position: absolute;
+          right: 0%;
+          top: 10%;
+        }
+      }
+      @media screen and (min-width: 1300px) {
+        #carousle #one {
+          height: 100%;
+          width: 70%;
+          position: absolute;
+          left: 15%;
+          z-index: 2;
+          /* top: 5%; */
+        }
+        #carousle #two {
+          height: 80%;
+          width: 60%;
+          position: absolute;
+          left: 0%;
+          top: 10%;
+        }
+        #carousle #three {
+          height: 80%;
+          width: 60%;
+          position: absolute;
+          right: 0%;
+          top: 10%;
+        }
+      }
+      @media screen and (max-width: 850px) {
+        #second-heading {
+          visibility: hidden;
+        }
+        #headerimage {
+          width: 100%;
+        }
+        #favrouite {
+          /* align-self:flex-start ; */
+          margin-left: auto;
+        }
+        /* #carousle #one
+{
+    height: 100%;
+    width: 70%;
+    position: absolute;
+    left: 20%;
+    z-index: 2;
+    top: 5%;
+    
+
+
+}
+
+
+#carousle #two
+{
+    height: 60%;
+    width: 50%;
+    position: absolute;
+    left: 10%;
+    top: 10%;
+
+
+}
+#carousle #three
+{
+    height: 60%;
+    width: 50%;
+    position: absolute;
+    right: 20%;
+    top: 10%
+
+
+
+} */
+      }
+      @media screen and (max-width: 850px) {
+        .image {
+          display: none;
+          height: 0px;
+          width: 0px;
+        }
+        div#one {
+          height: 0%;
+          width: 0%;
+        }
+        .image1 {
+          /* min-width:60%; */
+          width: 100%;
+          height: 100%;
+          min-height: 200px;
+          max-height: 600px;
+          /* max-width: 600px; */
+          /* position: absolute;  */
+        }
+        #carousle {
+          position: relative;
+        }
+        #carousle div {
+          position: absolute;
+        }
+        /* #four
+{
+    
+    visibility: unset; 
+} */
+
+        #four img {
+          height: 100%;
+          width: 100%;
+        }
+      }
+      /* latest release */
+      #latestheading {
+        text-transform: capitalize;
+        font-size: 1.6rem;
+      }
+
+      #latestrelease {
+        margin-left: 5%;
+        width: 70%;
+        height: auto;
+        display: inline-block;
+      }
+      #latestreleases {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+      }
+      #latestreleasesong {
+        color: transparent;
+        position: relative;
+        display: inline;
+      }
+      .latestreleasecont {
+        width: 45%;
+        display: flex;
+        /* justify-content: center; */
+        flex-direction: row;
+        padding: 0.2rem;
+        /* border: 1px solid blue; */
+        /* flex-wrap: wrap; */
+        margin: 0.5rem;
+      }
+      .latestreleasecont:hover {
+        box-shadow: 2px 2px 10px 3px cyan;
+      }
+
+      .latestreleasecont img {
+        border-radius: 30px;
+      }
+      .latestreleasecont i {
+        position: absolute;
+        left: 42%;
+        top: 40%;
+        font-size: 1.4rem;
+        /* visibility: hidden; */
+        /* color: transparent; */
+      }
+      #latestreleasesong:hover {
+        color: white;
+      }
+      #latestreleasename {
+        text-transform: capitalize;
+        text-align: center;
+        font-weight: 700;
+        font-size: 1.2rem;
+        align-self: center;
+        margin: auto;
+        padding: 1rem;
+      }
+      #latestreleasename span {
+        font-weight: 500;
+        font-size: 1rem;
+      }
+
+      #dots {
+        text-decoration: none;
+        color: rgb(149, 132, 132);
+        font-size: 1rem;
+        font-weight: 900;
+        letter-spacing: 1px;
+      }
+
+      @media screen and (max-width: 1300px) {
+        .latestreleasecont {
+          width: 70%;
+          display: flex;
+          /* justify-content: center; */
+          flex-direction: row;
+          padding: 0.2rem;
+          /* border: 1px solid blue; */
+          /* flex-wrap: wrap; */
+          margin: 0.5rem;
+        }
+      }
+      @media screen and (max-width: 760px) {
+        .latestreleasecont {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          flex-direction: row;
+          padding: 0.2rem;
+          /* border: 1px solid blu */
+          flex-wrap: wrap;
+          margin: 0.5rem;
+        }
+      }
+      .latestreleasecont {
+        position: relative;
+      }
+
+      .onclick {
+        position: absolute;
+        right: 7%;
+        top: 7%;
+        /* border: 1px solid grey; */
+        font-size: 0.8rem;
+        padding: 2.5rem;
+        font-weight: 700;
+        text-transform: capitalize;
+
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        margin-top: 0%;
+        margin-bottom: 0%;
+        background-color: white;
+        padding-right: 0rem;
+        padding-left: 0%;
+        /* overflow: hidden; */
+      }
+      .onclick p {
+        /* background-color: grey; */
+        color: grey;
+        box-sizing: content-box;
+        font-size: 1rem;
+        margin: 0%;
+        /* border-bottom: 1px solid grey; */
+        position: relative;
+        /* margin-right: 0.5rem; */
+        margin-left: 2rem;
+        margin-right: 2rem;
+        padding-bottom: 5px;
+        width: 100%;
+      }
+
+      .onclick i {
+        position: relative;
+        left: -5%;
+        color: grey;
+        font-size: 1rem;
+        top: 10%;
+      }
+      input#drop,
+      #drop1,
+      #drop2,
+      #drop3 {
+        display: none;
+      }
+
+      label {
+        cursor: pointer;
+      }
+
+      .onclick {
+        max-height: 0;
+        max-width: 0%;
+        overflow: hidden;
+        padding: 0%;
+      }
+      input:checked ~ .onclick {
+        max-height: 1000px;
+        max-width: 100%;
+        /* transition: all ease 1s; */
+        padding: 1rem;
+      }
+      @media screen and (max-width: 570px) {
+        .timestamp {
+          visibility: hidden;
+        }
+
+        .following h5 {
+          display: none;
+        }
+      }
+      /* queue section */
+      #queue {
+        height: 60%;
+        width: 19%;
+        /* border: 2px solid blue; */
+        display: inline-block;
+        right: 0%;
+        /* padding: 3rem; */
+        display: fixed;
+        padding-left: 0.2rem;
+        margin-left: 0%;
+        position: fixed;
+        bottom: 0%;
+        margin-left: 1%;
+        margin-left: 3%;
+        overflow: scroll;
+      }
+      #queueinit {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 0.5rem;
+        position: sticky;
+        top: 0%;
+        z-index: 5;
+        background-color: black;
+        opacity: 0.6;
+      }
+
+      .dropdown {
+        /* display: inline-block; */
+        height: 0%;
+        width: 0%;
+        display: none;
+      }
+      .dropdown a {
+        background-color: transparent;
+        border: 0px;
+        padding: 0%;
+        color: rgb(45, 173, 173);
+      }
+      .dropdown a:hover {
+        background-color: transparent;
+      }
+      .dropdown a:focus {
+        outline: none;
+      }
+      .songqueue {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-family: sans-serif;
+        /* flex-wrap: wrap; */
+        width: 100%;
+        margin-bottom: 0.5rem;
+      }
+      /* queueimage */
+      .queueimage img {
+        height: 2.8rem;
+        border-radius: 12px;
+      }
+      .songqueue .numbering {
+        padding: 0px 5px 0px 0px;
+        align-self: center;
+        font-weight: 300;
+        font-size: 0.7rem;
+        color: grey;
+      }
+      .queuedetails p {
+        margin: 0px;
+        line-height: 1rem;
+        font-size: 0.7rem;
+        color: rgb(153, 152, 152);
+        padding: 0px 5px 0px 14px;
+      }
+      .like {
+        margin: 0 auto;
+        margin-right: 1rem;
+      }
+      .queueimage {
+        position: relative;
+      }
+      .queueimage i {
+        position: absolute;
+        left: 40%;
+        top: 37%;
+        font-size: 1rem;
+        color: rgb(202, 202, 202);
+
+        display: none;
+      }
+      .queueimage:hover > i {
+        display: initial;
+      }
+      @media screen and (max-width: 1100px) {
+        #queue {
+          width: 26%;
+          right: 2%;
+        }
+      }
+      @media screen and (min-width: 1100px) {
+        .dropdown {
+          /* display: inline-block; */
+          height: 100%;
+          width: auto;
+          display: initial;
+        }
+      }
+      /* width */
+      #queue::-webkit-scrollbar {
+        width: 5px;
+        height: 20%;
+        /* overflow-x: hidden; */
+      }
+      body::-webkit-scrollbar {
+        width: 0%;
+      }
+      body {
+        overflow-x: hidden;
+      }
+      #artists {
+        width: 65%;
+        /* border: 2px solid blue; */
+        margin-left: 5%;
+        /* height: 28vh; */
+        margin-top: 4%;
+        display: flex;
+        flex-direction: row;
+        /* height: 15%; */
+        justify-content: space-around;
+        flex-wrap: wrap;
+        overflow: hidden;
+        max-height: 163px;
+      }
+      .artist-profile {
+        height: 100%;
+        /* border-radius: 50%; */
+
+        text-align: center;
+        width: 10rem;
+        height: 10rem;
+        margin: 0.3rem;
+        margin-top: 0px;
+      }
+      .artist-profile img {
+        width: 90%;
+        overflow: hidden;
+        border-radius: 50%;
+        height: 88%;
+        transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1) 20ms;
+        transform: scale(0.9);
+      }
+      .artist-profile img:hover {
+        transform: scale(1);
+        box-shadow: 1px 1px 10px 1px cyan;
+        opacity: 0.6;
+      }
+
+      .artist-profile span {
+        font-weight: 700;
+        font-size: 1rem;
+        color: ivory;
+        text-transform: capitalize;
+      }
+      #genre-list {
+        display: flex;
+        justify-content: space-between;
+        width: 65%;
+        margin-left: 5%;
+        margin-top: 5%;
+        min-height: 11rem;
+        max-height: 12rem;
+      }
+      #genre-list div {
+        width: 30%;
+        margin: 0.5rem;
+        transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1) 20ms;
+      }
+      #genre-list div img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+      #genre-list div:hover {
+        box-shadow: 2px 2px 10px 3px cyan;
+        transform: scale(1.1);
+      }
+      #genre-list div:hover {
+        box-shadow: 2px 2px 10px 3px cyan;
+        transform: scale(1.1);
+      }
+
+      .card {
+        overflow: hidden;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        max-height: 30rem;
+        /* border: 1px solid black; */
+        background-color: #7f53ac;
+        background-image: linear-gradient(315deg, #7f53ac 0%, #647dee 74%);
+      }
+      .card_hero {
+        flex: 0 0 40%;
+      }
+      .card_hero img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .card-content {
+        flex: 1;
+        padding: 25px 50px;
+        display: flex;
+        flex-direction: column;
+      }
+      .flexinfo {
+        display: flex;
+        flex-direction: column;
+      }
+      .flexbutton {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+      }
+      .following {
+        display: flex;
+        flex-direction: row;
+      }
+      .following h5 {
+        align-self: center;
+        margin-left: auto;
+        font-size: 1rem;
+        font-weight: 500;
+        text-transform: capitalize;
+      }
+      .state {
+        margin-top: 0%;
+        transform: translateY(-5px);
+      }
+      #follow {
+        padding-left: 1rem;
+        align-self: center;
+        color: honeydew;
+        font-weight: 300;
+        font-size: 0.9rem;
+        font-family: sans-serif;
+      }
+      #playb {
+        /* flex: 1 1 auto; */
+        margin: 10px;
+        padding: 10px;
+        text-align: center;
+        text-transform: uppercase;
+        transition: 0.5s;
+        background-size: 200% auto;
+        color: white;
+        /* text-shadow: 0px 0px 10px rgba(0,0,0,0.2);*/
+        /* box-shadow: 0 0 20px #eee; */
+        /* border-radius: 10px; */
+      }
+
+      /* Demo Stuff End -> */
+
+      /* <- Magic Stuff Start */
+
+      #playb:hover {
+        background-position: right center; /* change the direction of the change here */
+        box-shadow: 1px 1px 20px rgb(40, 83, 133);
+      }
+
+      #playb {
+        background-image: linear-gradient(
+          to right,
+          #ce9cbf 0%,
+          #86a0ce 51%,
+          #fbc2eb 100%
+        );
+      }
+      #playb {
+        border: none;
+      }
+      #aboutzayn {
+        transform: translateY(-10px);
+        color: rgb(49, 34, 34);
+        font-family: sans-serif;
+      }
+      #artistid {
+        width: 65%;
+        position: relative;
+        /* transform: translateY(30%); */
+        /* left: 5%; */
+        margin-top: 5rem;
+        overflow: hidden;
+        height: 40%;
+        margin-left: 5%;
+      }
+     
+      #zaynsongs {
+        width: 65%;
+        margin-left: 5%;
+        margin-top: 3%;
+        /* border: 2px solid blue; */
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+      }
+      #zaynsongs .songqueue {
+        margin: 0px 0px 10px;
+        background-color: rgb(32, 42, 61);
+        padding: 10px 0px;
+        /* flex-direction: column; */
+transform: scale(0.97);
+transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1) 20ms;
+
+      }
+      #zaynsongs .songqueue:hover
+      {
+        box-shadow: 1px 1px 20px rgb(40, 83, 133);
+transform: scale(1.03);
+      }
+      @media screen and (max-width: 810px) {
+        #queue {
+          display: none;
+        }
+        #artists {
+          width: 95%;
+        }
+        #genre-list {
+          width: 95%;
+        }
+        #latestrelease {
+          width: 95%;
+        }
+        .following h5 {
+          display: none;
+        }
+        #artistid {
+          width: 90%;
+          margin-right: 5%;
+        }
+        #zaynsongs {
+        width: 90%;
+        margin-right: 5%;
+      
+      }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div id="headerimage">
+        <div id="siteimg"><img src="images/topicon.png" alt="" /></div>
+        <div id="sitetitle">
+          Ninja <br />
+          Studio
+        </div>
+        <div id="favrouite">favrouites</div>
+      </div>
+      <div id="second-heading">
+        <div>
+          <input type="text" placeholder="search" />
+          <i class="fa fa-search"></i><i class="fas fa-microphone"></i>
+        </div>
+        <div id="bell">
+          <i class="fas fa-bell"></i>
+        </div>
+        <div id="profile"></div>
+      </div>
+    </header>
+    <section id="artistid">
+      <figure class="card">
+        <div class="card_hero"><img src="zayn-2021-m9.jpg" alt="" /></div>
+
+        <div class="card-content">
+          <div class="flexinfo">
+            <div class="following">
+              <h2>ZAYN</h2>
+              <h5>851 followers</h5>
+            </div>
+            <h4 class="state">Canadian singer</h4>
+            <p id="aboutzayn">
+              Zain Javadd Malik, known mononymously as Zayn, is an English
+              singer and songwriter. Born and raised in Bradford, Malik
+              auditioned as a solo contestant for the British music competition
+              The X Factor in 2010. After being eliminated as a solo performer,
+              Malik was brought back into the competition, along with four other
+              contestants, to form the boy band One Direction.
+            </p>
+          </div>
+          <div class="flexbutton">
+            <button id="playb">play all</button>
+            <div id="follow">Follow</div>
+          </div>
+        </div>
+      </figure>
+    </section>
+    <section id="zaynsongs">
+      <div class="songqueue">
+        <div class="numbering">01</div>
+        <div class="queueimage">
+          <i class="fas fa-play"></i> <img src="OIP.jpg" alt="" />
+        </div>
+        <div class="queuedetails">
+          <p>
+            <span
+              style="
+                font-weight: 700;
+                font-size: 0.9rem;
+                color: ivory;
+                text-transform: capitalize;
+              "
+              >Pillowtalk</span
+            >
+            <br />
+            ZAYN
+          </p>
+        </div>
+        <div class="like"><i class="far fa-heart"></i><i class="fas fa-plus" style="padding: 0px 15px;"></i></div>
+      </div>
+      <div class="songqueue">
+        <div class="numbering">02</div>
+        <div class="queueimage">
+          <i class="fas fa-play"></i> <img src="idk.jfif" alt="" />
+        </div>
+        <div class="queuedetails">
+          <p>
+            <span
+              style="
+                font-weight: 700;
+                font-size: 0.9rem;
+                color: ivory;
+                text-transform: capitalize;
+              "
+              >I Don't Wanna Live Forever</span
+            >
+            <br />
+            ZAYN
+          </p>
+        </div>
+        <div class="like"><i class="far fa-heart"></i><i class="fas fa-plus" style="padding: 0px 15px;"></i></div>
+      </div>
+      <div class="songqueue">
+        <div class="numbering">03</div>
+        <div class="queueimage">
+          <i class="fas fa-play"></i> <img src="th.jpg" alt="" />
+        </div>
+        <div class="queuedetails">
+          <p>
+            <span
+              style="
+                font-weight: 700;
+                font-size: 0.9rem;
+                color: ivory;
+                text-transform: capitalize;
+              "
+              >Still Got Time</span
+            >
+            <br />
+            ZAYN
+          </p>
+        </div>
+        <div class="like"><i class="far fa-heart"></i><i class="fas fa-plus" style="padding: 0px 15px;"></i></div>
+      </div>
+      <div class="songqueue">
+        <div class="numbering">04</div>
+        <div class="queueimage">
+          <i class="fas fa-play"></i> <img src="dtd.jfif" alt="" />
+        </div>
+        <div class="queuedetails">
+          <p>
+            <span
+              style="
+                font-weight: 700;
+                font-size: 0.9rem;
+                color: ivory;
+                text-transform: capitalize;
+              "
+              >Dusk Till Dawn</span
+            >
+            <br />
+            ZAYN
+          </p>
+        </div>
+        <div class="like"><i class="far fa-heart"></i><i class="fas fa-plus" style="padding: 0px 15px;"></i></div>
+      </div>
+      <div class="songqueue">
+        <div class="numbering">05</div>
+        <div class="queueimage">
+          <i class="fas fa-play"></i> <img src="tamp.jfif" alt="" />
+        </div>
+        <div class="queuedetails">
+          <p>
+            <span
+              style="
+                font-weight: 700;
+                font-size: 0.9rem;
+                color: ivory;
+                text-transform: capitalize;
+              "
+              >Trampoline </span
+            >
+            <br />
+            ZAYN
+          </p>
+        </div>
+        <div class="like"><i class="far fa-heart"></i><i class="fas fa-plus" style="padding: 0px 15px;"></i></div>
+      </div>
+      <div class="songqueue">
+        <div class="numbering">06</div>
+        <div class="queueimage">
+          <i class="fas fa-play"></i> <img src="wnw.jfif" alt="" />
+        </div>
+        <div class="queuedetails">
+          <p>
+            <span
+              style="
+                font-weight: 700;
+                font-size: 0.9rem;
+                color: ivory;
+                text-transform: capitalize;
+              "
+              >A Whole New World (End Title)</span
+            >
+            <br />
+            ZAYN
+          </p>
+        </div>
+        <div class="like"><i class="far fa-heart"></i><i class="fas fa-plus" style="padding: 0px 15px;"></i></div>
+      </div>
+      <div class="songqueue">
+        <div class="numbering">07</div>
+        <div class="queueimage">
+          <i class="fas fa-play"></i> <img src="zayn-better-thatgrapejuice-new-song-2020.jpg" alt=""/>
+        </div>
+        <div class="queuedetails">
+          <p>
+            <span
+              style="
+                font-weight: 700;
+                font-size: 0.9rem;
+                color: ivory;
+                text-transform: capitalize;
+              "
+              >Better</span
+            >
+            <br />
+            ZAYN
+          </p>
+        </div>
+        <div class="like"><i class="far fa-heart"></i><i class="fas fa-plus" style="padding: 0px 15px;"></i></div>
+      </div>
+    </section>
+
+    <section id="queue">
+      <div id="queueinit">
+        <div id="queueheading">
+          <h3 style="display: inline-block">Queue</h3>
+        </div>
+        <div class="dropdown">
+          <a
+            class="btn btn-secondary dropdown-toggle"
+            href="#"
+            role="button"
+            id="dropdownMenuLink"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Queue
+          </a>
+
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="songqueue">
+        <div class="numbering">01</div>
+        <div class="queueimage">
+          <i class="fas fa-play"></i> <img src="images/songimage.png" alt="" />
+        </div>
+        <div class="queuedetails">
+          <p>
+            <span
+              style="
+                font-weight: 700;
+                font-size: 0.9rem;
+                color: ivory;
+                text-transform: capitalize;
+              "
+              >mirage</span
+            >
+            <br />
+            Else
+          </p>
+        </div>
+        <div class="like"><i class="far fa-heart"></i></div>
+      </div>
+      <div class="songqueue">
+        <div class="numbering">02</div>
+        <div class="queueimage">
+          <i class="fas fa-play"></i> <img src="images/songimage1.png" alt="" />
+        </div>
+        <div class="queuedetails">
+          <p>
+            <span
+              style="
+                font-weight: 700;
+                font-size: 0.9rem;
+                color: ivory;
+                text-transform: capitalize;
+              "
+              >Worry bout us</span
+            >
+            <br />
+            Roise Lowe
+          </p>
+        </div>
+        <div class="like"><i class="far fa-heart"></i></div>
+      </div>
+      <div class="songqueue">
+        <div class="numbering">03</div>
+        <div class="queueimage">
+          <i class="fas fa-play"></i> <img src="images/songimage4.png" alt="" />
+        </div>
+        <div class="queuedetails">
+          <p>
+            <span
+              style="
+                font-weight: 700;
+                font-size: 0.9rem;
+                color: ivory;
+                text-transform: capitalize;
+              "
+              >New Skins</span
+            >
+            <br />
+            Flumes
+          </p>
+        </div>
+        <div class="like"><i class="far fa-heart"></i></div>
+      </div>
+      <div class="songqueue">
+        <div class="numbering">04</div>
+        <div class="queueimage">
+          <i class="fas fa-play"></i><img src="images/songimage3.png" alt="" />
+        </div>
+        <div class="queuedetails">
+          <p>
+            <span
+              style="
+                font-weight: 700;
+                font-size: 0.9rem;
+                color: ivory;
+                text-transform: capitalize;
+              "
+              >mirage</span
+            >
+            <br />
+            honey
+          </p>
+        </div>
+        <div class="like"><i class="far fa-heart"></i></div>
+      </div>
+      <div class="songqueue">
+        <div class="numbering">05</div>
+        <div class="queueimage">
+          <i class="fas fa-play"></i> <img src="images/songimage.png" alt="" />
+        </div>
+        <div class="queuedetails">
+          <p>
+            <span
+              style="
+                font-weight: 700;
+                font-size: 0.9rem;
+                color: ivory;
+                text-transform: capitalize;
+              "
+              >mirage</span
+            >
+            <br />
+            honey
+          </p>
+        </div>
+        <div class="like"><i class="far fa-heart"></i></div>
+      </div>
+      <div class="songqueue">
+        <div class="numbering">06</div>
+        <div class="queueimage">
+          <i class="fas fa-play"></i> <img src="images/songimage1.png" alt="" />
+        </div>
+        <div class="queuedetails">
+          <p>
+            <span
+              style="
+                font-weight: 700;
+                font-size: 0.9rem;
+                color: ivory;
+                text-transform: capitalize;
+              "
+              >mirage</span
+            >
+            <br />
+            honey
+          </p>
+        </div>
+        <div class="like"><i class="far fa-heart"></i></div>
+      </div>
+      <div class="songqueue">
+        <div class="numbering">07</div>
+        <div class="queueimage">
+          <i class="fas fa-play"></i> <img src="images/songimage3.png" alt="" />
+        </div>
+        <div class="queuedetails">
+          <p>
+            <span
+              style="
+                font-weight: 700;
+                font-size: 0.9rem;
+                color: ivory;
+                text-transform: capitalize;
+              "
+              >mirage</span
+            >
+            <br />
+            honey
+          </p>
+        </div>
+        <div class="like"><i class="far fa-heart"></i></div>
+      </div>
+      <div class="songqueue">
+        <div class="numbering">08</div>
+        <div class="queueimage">
+          <i class="fas fa-play"></i> <img src="images/songimage4.png" alt="" />
+        </div>
+        <div class="queuedetails">
+          <p>
+            <span
+              style="
+                font-weight: 700;
+                font-size: 0.9rem;
+                color: ivory;
+                text-transform: capitalize;
+              "
+              >mirage</span
+            >
+            <br />
+            honey
+          </p>
+        </div>
+        <div class="like"><i class="far fa-heart"></i></div>
+      </div>
+      <div class="songqueue">
+        <div class="numbering">09</div>
+        <div class="queueimage">
+          <i class="fas fa-play"></i> <img src="images/songimage1.png" alt="" />
+        </div>
+        <div class="queuedetails">
+          <p>
+            <span
+              style="
+                font-weight: 700;
+                font-size: 0.9rem;
+                color: ivory;
+                text-transform: capitalize;
+              "
+              >mirage</span
+            >
+            <br />
+            honey
+          </p>
+        </div>
+        <div class="like"><i class="far fa-heart"></i></div>
+      </div>
+      <div class="songqueue">
+        <div class="numbering">10</div>
+        <div class="queueimage">
+          <i class="fas fa-play"></i> <img src="images/songimage3.png" alt="" />
+        </div>
+        <div class="queuedetails">
+          <p>
+            <span
+              style="
+                font-weight: 700;
+                font-size: 0.9rem;
+                color: ivory;
+                text-transform: capitalize;
+              "
+              >mirage</span
+            >
+            <br />
+            honey
+          </p>
+        </div>
+        <div class="like"><i class="far fa-heart"></i></div>
+      </div>
+      <div class="songqueue">
+        <div class="numbering">05</div>
+        <div class="queueimage">
+          <i class="fas fa-play"></i> <img src="images/songimage.png" alt="" />
+        </div>
+        <div class="queuedetails">
+          <p>
+            <span
+              style="
+                font-weight: 700;
+                font-size: 0.9rem;
+                color: ivory;
+                text-transform: capitalize;
+              "
+              >mirage</span
+            >
+            <br />
+            honey
+          </p>
+        </div>
+        <div class="like"><i class="far fa-heart"></i></div>
+      </div>
+      <div class="songqueue">
+        <div class="numbering">06</div>
+        <div class="queueimage">
+          <i class="fas fa-play"></i> <img src="images/songimage1.png" alt="" />
+        </div>
+        <div class="queuedetails">
+          <p>
+            <span
+              style="
+                font-weight: 700;
+                font-size: 0.9rem;
+                color: ivory;
+                text-transform: capitalize;
+              "
+              >mirage</span
+            >
+            <br />
+            honey
+          </p>
+        </div>
+        <div class="like"><i class="far fa-heart"></i></div>
+      </div>
+      <div class="songqueue">
+        <div class="numbering">07</div>
+        <div class="queueimage">
+          <i class="fas fa-play"></i> <img src="images/songimage3.png" alt="" />
+        </div>
+        <div class="queuedetails">
+          <p>
+            <span
+              style="
+                font-weight: 700;
+                font-size: 0.9rem;
+                color: ivory;
+                text-transform: capitalize;
+              "
+              >mirage</span
+            >
+            <br />
+            honey
+          </p>
+        </div>
+        <div class="like"><i class="far fa-heart"></i></div>
+      </div>
+      <div class="songqueue">
+        <div class="numbering">08</div>
+        <div class="queueimage">
+          <i class="fas fa-play"></i> <img src="images/songimage4.png" alt="" />
+        </div>
+        <div class="queuedetails">
+          <p>
+            <span
+              style="
+                font-weight: 700;
+                font-size: 0.9rem;
+                color: ivory;
+                text-transform: capitalize;
+              "
+              >mirage</span
+            >
+            <br />
+            honey
+          </p>
+        </div>
+        <div class="like"><i class="far fa-heart"></i></div>
+      </div>
+      <div class="songqueue">
+        <div class="numbering">09</div>
+        <div class="queueimage">
+          <i class="fas fa-play"></i> <img src="images/songimage1.png" alt="" />
+        </div>
+        <div class="queuedetails">
+          <p>
+            <span
+              style="
+                font-weight: 700;
+                font-size: 0.9rem;
+                color: ivory;
+                text-transform: capitalize;
+              "
+              >mirage</span
+            >
+            <br />
+            honey
+          </p>
+        </div>
+        <div class="like"><i class="far fa-heart"></i></div>
+      </div>
+      <div class="songqueue">
+        <div class="numbering">10</div>
+        <div class="queueimage">
+          <i class="fas fa-play"></i> <img src="images/songimage3.png" alt="" />
+        </div>
+        <div class="queuedetails">
+          <p>
+            <span
+              style="
+                font-weight: 700;
+                font-size: 0.9rem;
+                color: ivory;
+                text-transform: capitalize;
+              "
+              >mirage</span
+            >
+            <br />
+            honey
+          </p>
+        </div>
+        <div class="like"><i class="far fa-heart"></i></div>
+      </div>
+      <div class="songqueue">
+        <div class="numbering">05</div>
+        <div class="queueimage">
+          <i class="fas fa-play"></i> <img src="images/songimage.png" alt="" />
+        </div>
+        <div class="queuedetails">
+          <p>
+            <span
+              style="
+                font-weight: 700;
+                font-size: 0.9rem;
+                color: ivory;
+                text-transform: capitalize;
+              "
+              >mirage</span
+            >
+            <br />
+            honey
+          </p>
+        </div>
+        <div class="like"><i class="far fa-heart"></i></div>
+      </div>
+      <div class="songqueue">
+        <div class="numbering">06</div>
+        <div class="queueimage">
+          <i class="fas fa-play"></i> <img src="images/songimage1.png" alt="" />
+        </div>
+        <div class="queuedetails">
+          <p>
+            <span
+              style="
+                font-weight: 700;
+                font-size: 0.9rem;
+                color: ivory;
+                text-transform: capitalize;
+              "
+              >mirage</span
+            >
+            <br />
+            honey
+          </p>
+        </div>
+        <div class="like"><i class="far fa-heart"></i></div>
+      </div>
+      <div class="songqueue">
+        <div class="numbering">07</div>
+        <div class="queueimage">
+          <i class="fas fa-play"></i> <img src="images/songimage3.png" alt="" />
+        </div>
+        <div class="queuedetails">
+          <p>
+            <span
+              style="
+                font-weight: 700;
+                font-size: 0.9rem;
+                color: ivory;
+                text-transform: capitalize;
+              "
+              >mirage</span
+            >
+            <br />
+            honey
+          </p>
+        </div>
+        <div class="like"><i class="far fa-heart"></i></div>
+      </div>
+      <div class="songqueue">
+        <div class="numbering">08</div>
+        <div class="queueimage">
+          <i class="fas fa-play"></i> <img src="images/songimage4.png" alt="" />
+        </div>
+        <div class="queuedetails">
+          <p>
+            <span
+              style="
+                font-weight: 700;
+                font-size: 0.9rem;
+                color: ivory;
+                text-transform: capitalize;
+              "
+              >mirage</span
+            >
+            <br />
+            honey
+          </p>
+        </div>
+        <div class="like"><i class="far fa-heart"></i></div>
+      </div>
+      <div class="songqueue">
+        <div class="numbering">09</div>
+        <div class="queueimage">
+          <i class="fas fa-play"></i> <img src="images/songimage1.png" alt="" />
+        </div>
+        <div class="queuedetails">
+          <p>
+            <span
+              style="
+                font-weight: 700;
+                font-size: 0.9rem;
+                color: ivory;
+                text-transform: capitalize;
+              "
+              >mirage</span
+            >
+            <br />
+            honey
+          </p>
+        </div>
+        <div class="like"><i class="far fa-heart"></i></div>
+      </div>
+      <div class="songqueue">
+        <div class="numbering">10</div>
+        <div class="queueimage">
+          <i class="fas fa-play"></i> <img src="images/songimage3.png" alt="" />
+        </div>
+        <div class="queuedetails">
+          <p>
+            <span
+              style="
+                font-weight: 700;
+                font-size: 0.9rem;
+                color: ivory;
+                text-transform: capitalize;
+              "
+              >mirage</span
+            >
+            <br />
+            honey
+          </p>
+        </div>
+        <div class="like"><i class="far fa-heart"></i></div>
+      </div>
+    </section>
+
+    <footer></footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
+      integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
+      integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
